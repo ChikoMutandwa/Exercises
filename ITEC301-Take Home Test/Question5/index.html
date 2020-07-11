@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Question 5</title>
+    <link rel="stylesheet" href="./styles.css">
+    <meta na="viewport" content="width=device-width, initial-scale=1">
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <section class="main-container">
+        <h1>Meat Brothers Butchery</h1>
+        <p>
+            A place for meat lovers...
+        </p>
+        <label>Contact Form</label>
+        <form id="contact-form" onsubmit="return validation(this)">
+            <label>Full Name</label>
+            <div class="inputField">
+                <input id="name" type="text" name="name" placeholder="e.g.Your name...">
+            </div>
+            <label>Email Address</label>
+            <div class="inputField">
+                <input type="text" id="email-address" name="emailaddress" placeholder="e.g.Your Email">
+            </div>
+            <label>Country</label>
+            <div class="inputField">
+                <select name="country" id="country">
+                    <option value="" disabled selected>--Select--</option>
+                    <option value="South Africa">South Africa</option>
+                    <option value="UK">Australia</option>
+                    <option value="USA">United States</option>
+                </select>
+            </div>
+            <label>Message</label>
+            <div class="inputField">
+                <textarea name="message" id="message" placeholder="Your message"></textarea>
+            </div>
+            <div class="btnSubmit">
+                <input class="btn" onclick="validation()" type="button" value="Submit">
+            </div>
+        </form>
+
+        </div>
+    </section>
+</body>
+
+</html>

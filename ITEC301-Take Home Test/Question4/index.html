@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Question 4</title>
+
+    <style>
+        form {
+            /* margin: 50px; */
+            margin-top: 107px;
+            margin-left: 367px;
+            margin-right: 367px;
+            border: solid 3px black;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-bottom: 50px;
+        }
+        
+        label {
+            text-align: right;
+        }
+        
+        h2,
+        .btn {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form name="myForm">
+        <h2>RB InforTech Calculator</h2>
+        <table>
+            <tr>
+                <td><label>Enter the value:</label></td>
+                <td><input type="text" name="num"></td>
+
+            </tr>
+            <tr>
+                <td></td>
+                <td class="btn"><br> <input type="button" value="Calculate" onclick="square()"></td>
+            </tr>
+            <tr>
+                <td><label></label>The square root value is:</label>
+                </td>
+                <td><br><input type="text" name="ans"></td>
+
+            </tr>
+
+        </table>
+    </form>
+    <script>
+        function square() {
+            var _num, _ans;
+
+            _num = parseFloat(document.myForm.num.value);
+
+            if (_num <= 0) {
+                alert("Invalid!!!!")
+            } else {
+                _ans = Math.sqrt(_num);
+                document.myForm.ans.value = _ans;
+            }
+        }
+    </script>
+</body>
+
+</html>
